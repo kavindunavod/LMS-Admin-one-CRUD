@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, hwb(120 81% 18% / 0.9), #daddda); /* Gradient background */
+  display: flex;
+  justify-content: space-between; /* Space between left and right */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  height: 100px; /* Height of the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.nav-item {
+  margin: 0 10px; /* Spacing between navbar items */
+}
+
+.nav-button {
+  font-family: Arial, sans-serif;
+  padding: 10px; /* Padding for the button */
+  font-size: 23px; /* Font size for the button text */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color:black; /* Button color */
+  border: none;
+  border-radius: 10px; /* Rounded corners for the button */
+  box-shadow: 0 4px 6px rgb(10, 9, 9); /* Button shadow */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 160px;
+  height: 70px; /* Fixed width for all buttons */
+}
+
+.nav-button:hover {
+  background-color: green; /* Darker button color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.nav-button:active {
+  background-color: #004494; /* Even darker color when button is pressed */
+  transform: scale(0.95); /* Slightly shrink the button on press */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove default underline from links */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
